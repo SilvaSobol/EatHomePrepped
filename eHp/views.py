@@ -7,3 +7,7 @@ from .models import *
 
 def index(request):
     return render (request, 'index.html')
+
+def cart(request):
+    context = {}
+    return render(request, 'cart.html', context)
