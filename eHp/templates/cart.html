@@ -16,7 +16,8 @@
     <div class="content">
         <div class="row justify-content-center">  
             <div class="col-lg-10">
-                <form action="" method="POST"></form>
+                <form action="" method="POST">
+                {% csrf_token %}
                 <div class="box">
                     <a class="btn btn-outline-dark" href="{% url 'index' %}"><< Continue Shopping</a>
                     <p class="display-4">Shopping Cart</p>
@@ -31,9 +32,7 @@
                         </tr>
                     </table>    
                 </div>
-
                 <br>
-
                 <div class="box">
                     <table class="table">
                         <tr>
@@ -54,11 +53,10 @@
                         </tr>
                     </table>
                 </div>
+                </form>
             </div>
         </div>
     </div>
     {% endblock content %}
-    
-
 </body>
 </html>
