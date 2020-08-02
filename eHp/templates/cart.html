@@ -14,22 +14,22 @@
     {% load static %}
     {% block content %}
     <div class="content">
-        <div class="row">  
-            <div class="col-lg-12">
+        <div class="row justify-content-center">  
+            <div class="col-lg-10">
+                <form action="" method="POST"></form>
                 <div class="box">
                     <a class="btn btn-outline-dark" href="{% url 'index' %}"><< Continue Shopping</a>
+                    <p class="display-4">Shopping Cart</p>
                     <br>
-                    <br>
-
                     <table class="table">
                         <tr>
                             <th><h5>Items: <strong>4</strong></h5></th>
-                            <th><h5>Total: <strong>$50</strong></h5></th>
+                            <th><h5>Subtotal: <strong>$50</strong></h5></th>
                             <th>
-                                <a href="" class="btn btn-outline-success">Checkout</a>
+                                <button class="btn btn-outline-success" type="submit">Checkout</button>
                             </th>
                         </tr>
-                    </table>
+                    </table>    
                 </div>
 
                 <br>
@@ -47,7 +47,9 @@
                             <td><img src="" alt="" class=></td>
                             <td>Product 1</td>
                             <td>$50</td>
-                            <td>5</td>
+                            <td>
+                                <input type="number" style="width:50px" value="5" class="quantity" name="quantity">
+                            </td>
                             <td>$10000</td>
                         </tr>
                     </table>
