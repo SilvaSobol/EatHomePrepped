@@ -63,16 +63,10 @@ class Product(models.Model):
     name = models.CharField(max_length = 255)
     category = models.CharField(max_length = 255)
     desc = models.TextField(max_length=450)
-    price =  price = models.DecimalField(decimal_places=2, max_digits=10)
+    price = models.DecimalField(decimal_places=2, max_digits=10)
     purchased_by = models.ManyToManyField(User, related_name ="has_bought") # users who bought specific product
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = productManager()
-
-# class Order(models.Model):
-#     total_price = models.DecimalField(decimal_places=2, max_digits=6)
-#     placed_by = models.ForeignKey(User, related_name= "has_order", on_delete=models.CASCADE)
-#     created_at = models.DateTimeField(auto_now_add=True)
-#     updated_at = models.DateTimeField(auto_now=True)
 
 
