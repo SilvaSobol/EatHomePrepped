@@ -1,0 +1,65 @@
+
+html{
+    background-image: url(img/prep.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: unset;
+}
+
+h1 {
+    color: white;
+    background-color: #9fa030;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+.container-r{
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    background-color: #9fa030;
+	height: auto;
+	border-radius: 5px;
+}
+	.container-r h1{
+		background-color: blanchedalmond;
+		color: black;
+	}
+.container-l{
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    background-color: #9fa030;
+	height: auto;
+	border-radius: 5px;
+}
+	.container-l h1{
+	background-color: blanchedalmond;
+	color: black;
+	}
+
+.wrap{
+	text-align: right;
+	}
+	
+
+#cart-icon{
+	width:25px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+#cart-total{
+	display: block;
+	text-align: center;
+	color:#fff;
+	background-color: dodgerblue;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+	font-size: 14px;
+}
