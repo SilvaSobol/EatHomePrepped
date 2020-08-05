@@ -1,3 +1,4 @@
+
 h1 {
     color: white;
     background-color: dodgerblue;
@@ -5,6 +6,36 @@ h1 {
     border-radius: 7px;
 
 }
+
+.container-r{
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    background-color: lightblue;
+	height: auto;
+	border-radius: 5px;
+}
+	.container-r h1{
+		background-color: dodgerblue;
+	}
+.container-l{
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    background-color: lightblue;
+	height: auto;
+	border-radius: 5px;
+}
+	.container-l h1{
+	background-color: dodgerblue;
+	}
+
+.wrap{
+	text-align: right;
+	}
+	
 
 #cart-icon{
 	width:25px;
@@ -16,7 +47,7 @@ h1 {
 	display: block;
 	text-align: center;
 	color:#fff;
-	background-color: red;
+	background-color: dodgerblue;
 	width: 20px;
 	height: 25px;
 	border-radius: 50%;
