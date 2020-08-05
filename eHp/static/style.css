@@ -1,7 +1,15 @@
 
+html{
+    background-image: url(img/prep.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: unset;
+}
+
 h1 {
     color: white;
-    background-color: dodgerblue;
+    background-color: #9fa030;
     padding: 10px;
     border-radius: 7px;
 
@@ -12,24 +20,26 @@ h1 {
     margin: 20px;
     padding: 10px;
     width: 40%;
-    background-color: lightblue;
+    background-color: #9fa030;
 	height: auto;
 	border-radius: 5px;
 }
 	.container-r h1{
-		background-color: dodgerblue;
+		background-color: blanchedalmond;
+		color: black;
 	}
 .container-l{
     display: inline-flex;
     margin: 20px;
     padding: 10px;
     width: 40%;
-    background-color: lightblue;
+    background-color: #9fa030;
 	height: auto;
 	border-radius: 5px;
 }
 	.container-l h1{
-	background-color: dodgerblue;
+	background-color: blanchedalmond;
+	color: black;
 	}
 
 .wrap{

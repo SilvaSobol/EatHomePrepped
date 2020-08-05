@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{% static 'style.css' %}" >
     </head>
     <body>
+      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="{% url 'index' %}">HomePrepped</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,10 +40,11 @@
             </div>
           </nav>
           <h1>Your home made healthy food option!</h1>
-          <div class = "container">
+            <div class = "container">
             {% block content %}
 
             {% endblock content %}
-          </div>
+            </div>
+      </div>
     </body>
 </html>
