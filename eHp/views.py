@@ -11,3 +11,7 @@ def index(request):
 def cart(request):
     context = {}
     return render(request, 'cart.html', context)
+
+def item_menu(request):
+    context = {}
+    return render(request, 'menu.html', context)
