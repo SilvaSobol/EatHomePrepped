@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div class="content">
+        <div class="row justify-content-center">  
+            <div class="col-lg-10">
+                <form action="" method="POST">
+                {% csrf_token %}
+                <div class="box">
+                    <a class="btn btn-outline-dark" href="{% url 'index' %}"><< Continue Shopping</a>
+                    <p class="display-4">Shopping Cart</p>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <th><h5>Items: <strong>4</strong></h5></th>
+                            <th><h5>Subtotal: <strong>$50</strong></h5></th>
+                            <th>
+                                <button class="btn btn-outline-warning" type="submit">Checkout</button>
+                            </th>
+                        </tr>
+                    </table>    
+                </div>
+                <br>
+                <div class="box">
+                    <table class="table">
+                        <tr>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt="" class=></td>
+                            <td>Product 1</td>
+                            <td>$50</td>
+                            <td>
+                                <input type="number" style="width:50px" value="5" class="quantity" name="quantity">
+                            </td>
+                            <td>$10000</td>
+                        </tr>
+                    </table>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
